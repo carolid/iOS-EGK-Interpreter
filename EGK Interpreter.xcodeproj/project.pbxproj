@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F056AA8F26D984F6007BB12B /* EGK_InterpreterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F056AA8E26D984F6007BB12B /* EGK_InterpreterApp.swift */; };
+		F056AA9126D984F6007BB12B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F056AA9026D984F6007BB12B /* ContentView.swift */; };
+		F056AA9326D984F7007BB12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F056AA9226D984F7007BB12B /* Assets.xcassets */; };
+		F056AA9626D984F7007BB12B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F056AA9526D984F7007BB12B /* Preview Assets.xcassets */; };
+		F056AA9826D984F7007BB12B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F056AA9726D984F7007BB12B /* Persistence.swift */; };
+		F056AA9B26D984F7007BB12B /* EGK_Interpreter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F056AA9926D984F7007BB12B /* EGK_Interpreter.xcdatamodeld */; };
+		F056AAA626D984F7007BB12B /* EGK_InterpreterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F056AAA526D984F7007BB12B /* EGK_InterpreterTests.swift */; };
+		F056AAB126D984F7007BB12B /* EGK_InterpreterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F056AAB026D984F7007BB12B /* EGK_InterpreterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F056AAA226D984F7007BB12B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F056AA8326D984F6007BB12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F056AA8A26D984F6007BB12B;
+			remoteInfo = "EGK Interpreter";
+		};
+		F056AAAD26D984F7007BB12B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F056AA8326D984F6007BB12B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F056AA8A26D984F6007BB12B;
+			remoteInfo = "EGK Interpreter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F056AA8B26D984F6007BB12B /* EGK Interpreter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EGK Interpreter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F056AA8E26D984F6007BB12B /* EGK_InterpreterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGK_InterpreterApp.swift; sourceTree = "<group>"; };
+		F056AA9026D984F6007BB12B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F056AA9226D984F7007BB12B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F056AA9526D984F7007BB12B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F056AA9726D984F7007BB12B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F056AA9A26D984F7007BB12B /* EGK_Interpreter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EGK_Interpreter.xcdatamodel; sourceTree = "<group>"; };
+		F056AA9C26D984F7007BB12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F056AAA126D984F7007BB12B /* EGK InterpreterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EGK InterpreterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F056AAA526D984F7007BB12B /* EGK_InterpreterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGK_InterpreterTests.swift; sourceTree = "<group>"; };
+		F056AAA726D984F7007BB12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F056AAAC26D984F7007BB12B /* EGK InterpreterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EGK InterpreterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F056AAB026D984F7007BB12B /* EGK_InterpreterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGK_InterpreterUITests.swift; sourceTree = "<group>"; };
+		F056AAB226D984F7007BB12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F056AA8826D984F6007BB12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F056AA9E26D984F7007BB12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F056AAA926D984F7007BB12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F056AA8226D984F6007BB12B = {
+			isa = PBXGroup;
+			children = (
+				F056AA8D26D984F6007BB12B /* EGK Interpreter */,
+				F056AAA426D984F7007BB12B /* EGK InterpreterTests */,
+				F056AAAF26D984F7007BB12B /* EGK InterpreterUITests */,
+				F056AA8C26D984F6007BB12B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F056AA8C26D984F6007BB12B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F056AA8B26D984F6007BB12B /* EGK Interpreter.app */,
+				F056AAA126D984F7007BB12B /* EGK InterpreterTests.xctest */,
+				F056AAAC26D984F7007BB12B /* EGK InterpreterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F056AA8D26D984F6007BB12B /* EGK Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				F056AA8E26D984F6007BB12B /* EGK_InterpreterApp.swift */,
+				F056AA9026D984F6007BB12B /* ContentView.swift */,
+				F056AA9226D984F7007BB12B /* Assets.xcassets */,
+				F056AA9726D984F7007BB12B /* Persistence.swift */,
+				F056AA9C26D984F7007BB12B /* Info.plist */,
+				F056AA9926D984F7007BB12B /* EGK_Interpreter.xcdatamodeld */,
+				F056AA9426D984F7007BB12B /* Preview Content */,
+			);
+			path = "EGK Interpreter";
+			sourceTree = "<group>";
+		};
+		F056AA9426D984F7007BB12B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F056AA9526D984F7007BB12B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F056AAA426D984F7007BB12B /* EGK InterpreterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F056AAA526D984F7007BB12B /* EGK_InterpreterTests.swift */,
+				F056AAA726D984F7007BB12B /* Info.plist */,
+			);
+			path = "EGK InterpreterTests";
+			sourceTree = "<group>";
+		};
+		F056AAAF26D984F7007BB12B /* EGK InterpreterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F056AAB026D984F7007BB12B /* EGK_InterpreterUITests.swift */,
+				F056AAB226D984F7007BB12B /* Info.plist */,
+			);
+			path = "EGK InterpreterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F056AA8A26D984F6007BB12B /* EGK Interpreter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F056AAB526D984F7007BB12B /* Build configuration list for PBXNativeTarget "EGK Interpreter" */;
+			buildPhases = (
+				F056AA8726D984F6007BB12B /* Sources */,
+				F056AA8826D984F6007BB12B /* Frameworks */,
+				F056AA8926D984F6007BB12B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EGK Interpreter";
+			productName = "EGK Interpreter";
+			productReference = F056AA8B26D984F6007BB12B /* EGK Interpreter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F056AAA026D984F7007BB12B /* EGK InterpreterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F056AAB826D984F7007BB12B /* Build configuration list for PBXNativeTarget "EGK InterpreterTests" */;
+			buildPhases = (
+				F056AA9D26D984F7007BB12B /* Sources */,
+				F056AA9E26D984F7007BB12B /* Frameworks */,
+				F056AA9F26D984F7007BB12B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F056AAA326D984F7007BB12B /* PBXTargetDependency */,
+			);
+			name = "EGK InterpreterTests";
+			productName = "EGK InterpreterTests";
+			productReference = F056AAA126D984F7007BB12B /* EGK InterpreterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F056AAAB26D984F7007BB12B /* EGK InterpreterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F056AABB26D984F7007BB12B /* Build configuration list for PBXNativeTarget "EGK InterpreterUITests" */;
+			buildPhases = (
+				F056AAA826D984F7007BB12B /* Sources */,
+				F056AAA926D984F7007BB12B /* Frameworks */,
+				F056AAAA26D984F7007BB12B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F056AAAE26D984F7007BB12B /* PBXTargetDependency */,
+			);
+			name = "EGK InterpreterUITests";
+			productName = "EGK InterpreterUITests";
+			productReference = F056AAAC26D984F7007BB12B /* EGK InterpreterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F056AA8326D984F6007BB12B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F056AA8A26D984F6007BB12B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					F056AAA026D984F7007BB12B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F056AA8A26D984F6007BB12B;
+					};
+					F056AAAB26D984F7007BB12B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = F056AA8A26D984F6007BB12B;
+					};
+				};
+			};
+			buildConfigurationList = F056AA8626D984F6007BB12B /* Build configuration list for PBXProject "EGK Interpreter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F056AA8226D984F6007BB12B;
+			productRefGroup = F056AA8C26D984F6007BB12B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F056AA8A26D984F6007BB12B /* EGK Interpreter */,
+				F056AAA026D984F7007BB12B /* EGK InterpreterTests */,
+				F056AAAB26D984F7007BB12B /* EGK InterpreterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F056AA8926D984F6007BB12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F056AA9626D984F7007BB12B /* Preview Assets.xcassets in Resources */,
+				F056AA9326D984F7007BB12B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F056AA9F26D984F7007BB12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F056AAAA26D984F7007BB12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F056AA8726D984F6007BB12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F056AA9826D984F7007BB12B /* Persistence.swift in Sources */,
+				F056AA9126D984F6007BB12B /* ContentView.swift in Sources */,
+				F056AA9B26D984F7007BB12B /* EGK_Interpreter.xcdatamodeld in Sources */,
+				F056AA8F26D984F6007BB12B /* EGK_InterpreterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F056AA9D26D984F7007BB12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F056AAA626D984F7007BB12B /* EGK_InterpreterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F056AAA826D984F7007BB12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F056AAB126D984F7007BB12B /* EGK_InterpreterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F056AAA326D984F7007BB12B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F056AA8A26D984F6007BB12B /* EGK Interpreter */;
+			targetProxy = F056AAA226D984F7007BB12B /* PBXContainerItemProxy */;
+		};
+		F056AAAE26D984F7007BB12B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F056AA8A26D984F6007BB12B /* EGK Interpreter */;
+			targetProxy = F056AAAD26D984F7007BB12B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F056AAB326D984F7007BB12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F056AAB426D984F7007BB12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F056AAB626D984F7007BB12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EGK Interpreter/Preview Content\"";
+				DEVELOPMENT_TEAM = 4A62YK65J9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "EGK Interpreter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.EGK-Interpreter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F056AAB726D984F7007BB12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EGK Interpreter/Preview Content\"";
+				DEVELOPMENT_TEAM = 4A62YK65J9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "EGK Interpreter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.EGK-Interpreter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F056AAB926D984F7007BB12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A62YK65J9;
+				INFOPLIST_FILE = "EGK InterpreterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.EGK-InterpreterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EGK Interpreter.app/EGK Interpreter";
+			};
+			name = Debug;
+		};
+		F056AABA26D984F7007BB12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A62YK65J9;
+				INFOPLIST_FILE = "EGK InterpreterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.EGK-InterpreterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EGK Interpreter.app/EGK Interpreter";
+			};
+			name = Release;
+		};
+		F056AABC26D984F7007BB12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A62YK65J9;
+				INFOPLIST_FILE = "EGK InterpreterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.EGK-InterpreterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EGK Interpreter";
+			};
+			name = Debug;
+		};
+		F056AABD26D984F7007BB12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A62YK65J9;
+				INFOPLIST_FILE = "EGK InterpreterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.EGK-InterpreterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EGK Interpreter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F056AA8626D984F6007BB12B /* Build configuration list for PBXProject "EGK Interpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F056AAB326D984F7007BB12B /* Debug */,
+				F056AAB426D984F7007BB12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F056AAB526D984F7007BB12B /* Build configuration list for PBXNativeTarget "EGK Interpreter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F056AAB626D984F7007BB12B /* Debug */,
+				F056AAB726D984F7007BB12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F056AAB826D984F7007BB12B /* Build configuration list for PBXNativeTarget "EGK InterpreterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F056AAB926D984F7007BB12B /* Debug */,
+				F056AABA26D984F7007BB12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F056AABB26D984F7007BB12B /* Build configuration list for PBXNativeTarget "EGK InterpreterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F056AABC26D984F7007BB12B /* Debug */,
+				F056AABD26D984F7007BB12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F056AA9926D984F7007BB12B /* EGK_Interpreter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F056AA9A26D984F7007BB12B /* EGK_Interpreter.xcdatamodel */,
+			);
+			currentVersion = F056AA9A26D984F7007BB12B /* EGK_Interpreter.xcdatamodel */;
+			path = EGK_Interpreter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F056AA8326D984F6007BB12B /* Project object */;
+}
